@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Портфолио Адилхана Жакшыбекова">
+  <title>Адилхан Жакшыбеков — Портфолио</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="На главную">А</a>
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#about">Обо мне</a>
+      <a href="#skills">Навыки</a>
+      <a href="#projects">Проекты</a>
+      <a href="#journey">Путь</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <button class="theme-toggle" aria-label="Переключить тему">☾</button>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">ПОРТФОЛИО / ВЕБ-РАЗРАБОТКА</p>
+        <h1>Адилхан Жакшыбеков<br><em></em></h1>
+        <p class="hero-text">Создаю современные и удобные цифровые решения. Изучаю веб-разработку и превращаю идеи в работающие проекты.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Смотреть проекты</a>
+          <a class="btn btn-outline" href="#contacts">Связаться</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="art-circle"></div><div class="art-card"><span>01 / CREATIVE</span><strong>Ideas<br>into reality.</strong><small>DESIGN · CODE · CREATE</small></div></div>
+    </section>
+
+    <section class="section about" id="about">
+      <p class="eyebrow">01 / ОБО МНЕ</p>
+      <div class="section-heading"><h2>Привет, я Адилхан</h2><p>Начинающий веб-разработчик, которому нравится создавать понятные, красивые и полезные сайты.</p></div>
+      <div class="about-grid"><div class="about-note"><span>МОЙ ПОДХОД</span><p>Сочетаю внимание к деталям, любопытство и постоянную практику. Каждый проект — возможность узнать что-то новое.</p></div><div class="about-stat"><strong>01+</strong><span>Путь в разработке</span></div><div class="about-stat"><strong>∞</strong><span>Идей для проектов</span></div></div>
+    </section>
+
+    <section class="section skills" id="skills">
+      <p class="eyebrow">02 / НАВЫКИ</p><div class="section-heading"><h2>Инструменты и навыки</h2><p>Технологии, с которыми я работаю и продолжаю развиваться.</p></div>
+      <div class="skill-list">
+        <div class="skill"><div><strong>HTML</strong><span>Структура страниц</span></div><b>90%</b><i style="--level:90%"></i></div>
+        <div class="skill"><div><strong>CSS</strong><span>Стили и адаптивность</span></div><b>80%</b><i style="--level:80%"></i></div>
+        <div class="skill"><div><strong>JavaScript</strong><span>Интерактивность</span></div><b>60%</b><i style="--level:60%"></i></div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <p class="eyebrow">03 / ИЗБРАННОЕ</p><div class="section-heading"><h2>Мои проекты </h2><p>Небольшая подборка работ и экспериментов.</p></div>
+      <div class="filters"><button class="filter active" data-filter="all">Все</button><button class="filter" data-filter="web">Веб-сайты</button><button class="filter" data-filter="other">Другое</button></div>
+      <div class="project-grid">
+        <article class="project-card" data-category="web" data-title="Портфолио" data-description="Персональный сайт-портфолио с адаптивной версткой и интерактивными элементами."><div class="project-visual visual-one">01</div><div class="project-info"><span>WEB DESIGN</span><h3>Сайт-портфолио</h3><button class="project-open">Подробнее ↗</button></div></article>
+        <article class="project-card" data-category="web" data-title="Лендинг" data-description="Учебный пример одностраничного сайта с выразительной типографикой и удобной навигацией."><div class="project-visual visual-two">02</div><div class="project-info"><span>FRONTEND</span><h3>Лендинг</h3><button class="project-open">Подробнее ↗</button></div></article>
+        <article class="project-card" data-category="other" data-title="Эксперименты" data-description="Небольшие эксперименты с интерфейсами, стилями и JavaScript."><div class="project-visual visual-three">03</div><div class="project-info"><span>PLAYGROUND</span><h3>Веб-эксперименты</h3><button class="project-open">Подробнее ↗</button></div></article>
+      </div>
+    </section>
+
+    <section class="section journey" id="journey">
+      <p class="eyebrow">04 / МОЙ ПУТЬ</p><div class="section-heading"><h2>Учусь и развиваюсь</h2><p>Каждый шаг помогает становиться увереннее в разработке.</p></div>
+      <div class="timeline"><div><span>СЕЙЧАС</span><h3>Изучаю веб-разработку</h3><p>Практикую HTML, CSS и JavaScript, создаю собственные проекты.</p></div><div><span>ДАЛЬШЕ</span><h3>Новые технологии</h3><p>Планирую углублять знания и пробовать новые инструменты.</p></div></div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <p class="eyebrow">05 / КОНТАКТЫ</p><div class="contact-layout"><div><h2>Давайте общаться.<br></h2><p>Есть идея или предложение? Напишите мне — буду рад обсудить.</p><div class="contact-links"><a href="mailto:adilkhan@example.com">adilkhan@example.com ↗</a><a href="#home">Вернуться наверх ↑</a></div></div>
+      <form class="contact-form" id="contact-form" novalidate><label for="name">Ваше имя</label><input id="name" name="name" type="text" placeholder="Как к вам обращаться?" required><label for="email">Электронная почта</label><input id="email" name="email" type="email" placeholder="name@example.com" required><label for="message">Сообщение</label><textarea id="message" name="message" rows="4" placeholder="Расскажите о вашей идее..." required></textarea><button class="btn btn-primary" type="submit">Отправить сообщение ↗</button><p class="form-message" aria-live="polite"></p></form></div>
+    </section>
+  </main>
+  <footer class="footer"><a class="logo" href="#home">А</a><span>© <span id="year"></span> Адилхан Жакшыбеков</span><span>Сделано с интересом к деталям.</span></footer>
+
+  <div class="modal" id="project-modal" aria-hidden="true"><div class="modal-backdrop"></div><div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" aria-label="Закрыть">×</button><p class="eyebrow">ПРОЕКТ</p><h2 id="modal-title"></h2><p id="modal-description"></p></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
